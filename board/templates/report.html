@@ -1,0 +1,60 @@
+
+
+<html>
+  <body>
+    <h2>To Do</h2>
+    <table style="width: 100%; border: 2px; background-color: #808080;">
+      <th>
+        <td >s.no</td>
+        <td >task</td>
+        <td >created at</td>
+      </th>
+      {% for task in todo %}
+        <tr>
+          <td>{{task.sno}}</td>
+          <td>{{task.task}}</td>
+          <td>{{task.created_at}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    <h2>In Progress</h2>
+    <table style="width: 100%; border: 2px; background-color: red;">
+      <th>
+        <td>s.no</td>
+        <td>task</td>
+        <td>created at</td>
+      </th>
+      {% for task in in_progress %}
+        <tr>
+          <td>{{task.sno}}</td>
+          <td>{{task.task}}</td>
+          <td>{{task.created_at}}</td>
+        </tr>
+      {% endfor %}
+      {% for task in done %}
+        <tr>
+          <td>{{task.sno}}</td>
+          <td>{{task.task}}</td>
+          <td>{{task.created_at}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Done</h2>
+    <table style="width: 100%; border: 2px; background-color: green;">
+      <th>
+        <td>s.no</td>
+        <td>task</td>
+        <td>created at</td>
+      </th>
+      {% for task in done %}
+        <tr>
+          <td>{{task.sno}}</td>
+          <td>{{task.task}}</td>
+          <td>{{task.created_at}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
