@@ -18,4 +18,4 @@ instructions: (blindly copy paste these cmds)
 7. run - py manage.py migrate
 8. run - py manage.py runserver
 
-that's it, the server/backend is running in your server at localhost:8000, now follow the client instruction. link to server app: https://github.com/ajayadikari/taskBoardServer
+that's it, the server/backend is running in your server at localhost:8000, now follow the client instruction. link to client app: [https://github.com/ajayadikari/taskBoardServer](https://github.com/ajayadikari/taskBoardClient)
